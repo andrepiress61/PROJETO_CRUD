@@ -72,7 +72,7 @@ def excluir_usuario(id):
         # executa o codigo no sql
         cursor.execute("""
             DELETE FROM TB_USUARIO WHERE ID=?
-        """, (di))
+        """, (id))
         
         # comita no banco
         conn.commit()
